@@ -1,0 +1,91 @@
+/* 🎥 Fondo de video en pantalla completa */
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-color: black;
+  pointer-events: none;
+}
+/* 🌐 Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+}
+/* Cabecera */
+header {
+  text-align: center;
+  padding: 50px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+}
+header h1 {
+  font-size: 2.8em;
+  margin: 0 0 10px;
+  letter-spacing: 1px;
+}
+header p {
+  font-size: 1.2em;
+  margin: 0;
+}
+/* 🖼️ Contenedor de galería */
+.galeria-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+}
+/* 🧩 Galería de recitales */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+/* 📄 Fichas */
+.ficha {
+  text-decoration: none;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  backdrop-filter: blur(2px);
+}
+.ficha:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(255, 140, 0, 0.5);
+}
+.ficha img {
+  width: 100%;
+  border-radius: 8px;
+}
+.ficha .info {
+  margin-top: 10px;
+}
+.ficha h3 {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+.ficha p {
+  margin: 0;
+  font-size: 0.95em;
+  opacity: 0.9;
+}
+/* 🦶 Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+}
